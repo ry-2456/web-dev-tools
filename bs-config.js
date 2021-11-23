@@ -22,6 +22,7 @@ module.exports = {
       "pug/**/*.pug",
       "css/*.css",
       "css/**/*.css",
+      "**/*.js",
       "imgs/*.png",
       "imgs/*.jpeg",
       "imgs/*.jpg",
