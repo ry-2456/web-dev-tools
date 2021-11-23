@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    container_name: node_web
+    build: .
+    working_dir: /home/app
+    command: bash
+    command: npm run web-related
+    ports:
+      - 4000:3000
+      - 4001:3001
+    volumes:
+      - node_modules:/home/app/node_modules
+      - ./:/home/app
+
+volumes:
+  node_modules:
